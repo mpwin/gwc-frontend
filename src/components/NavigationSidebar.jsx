@@ -3,9 +3,9 @@ import './NavigationSidebar.css';
 export default function NavigationSidebar() {
   return (
     <nav className="navigation-sidebar">
-      <ul>
+      <ul className="releases">
         <li><a>Heart of Thorns</a></li>
-        <ul>
+        <ul className="zones">
             <li><a>Verdant Brink</a></li>
             <li><a>Auric Basin</a></li>
             <li><a>Tangled Depths</a></li>

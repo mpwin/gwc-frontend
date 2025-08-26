@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <NavigationSidebar />
-      <h1>Guild Wars Catalog</h1>
+      <main className="main-content">
+        <h1>Guild Wars Catalog</h1>
+      </main>
     </>
   )
 }
