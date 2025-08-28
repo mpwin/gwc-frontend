@@ -15,3 +15,9 @@ services:
       - '.:/app'
       # Anonymous volume to prevent overwriting container's node_modules.
       - /app/node_modules
+    networks:
+      - gwc-network
+
+networks:
+  gwc-network:
+    external: true  # Same external network as Django
