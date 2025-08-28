@@ -1,16 +1,27 @@
+import { useState, useEffect } from 'react';
 import './NavigationSidebar.css';
 
 export default function NavigationSidebar() {
+  const [navData, setNavData] = useState([]);
+  useEffect(() => {
+    fetch('/api/releases/')
+      .then(response => response.json())
+      .then(data => setNavData(data));
+  }, []);
+
   return (
     <nav className="navigation-sidebar">
       <ul className="releases">
-        <li><a>Heart of Thorns</a></li>
-        <ul className="zones">
-            <li><a>Verdant Brink</a></li>
-            <li><a>Auric Basin</a></li>
-            <li><a>Tangled Depths</a></li>
-            <li><a>Dragon's Stand</a></li>
-        </ul>
+        {navData.map(release => (
+          <>
+            <li key={release.slug}>{release.name}</li>
+            <ul className="zones">
+              {release.zones.map(zone => (
+                <li key={zone.slug}>{zone.name}</li>
+              ))}
+            </ul>
+          </>
+        ))}
       </ul>
     </nav>
   );
