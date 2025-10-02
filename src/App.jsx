@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavigationSidebar } from './components/NavigationSidebar.jsx';
-import './App.css'
+import './App.css';
 
 function App() {
   const [view, setView] = useState({ type: null, slug: null });
@@ -14,7 +14,7 @@ function App() {
         <div>{view.slug}</div>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
