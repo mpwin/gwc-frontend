@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NavigationSidebar from './components/NavigationSidebar.jsx';
+import { NavigationSidebar } from './components/NavigationSidebar.jsx';
 import './App.css'
 
 function App() {

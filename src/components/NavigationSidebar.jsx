@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import './NavigationSidebar.css';
 
-export default function NavigationSidebar({ setView }) {
+export function NavigationSidebar({ setView }) {
   const [navData, setNavData] = useState([]);
+
   useEffect(() => {
     fetch('/api/releases/')
       .then(response => response.json())
