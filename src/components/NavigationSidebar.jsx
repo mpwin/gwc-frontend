@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './NavigationSidebar.css';
 
-export default function NavigationSidebar() {
+export default function NavigationSidebar({ setView }) {
   const [navData, setNavData] = useState([]);
   useEffect(() => {
     fetch('/api/releases/')
@@ -14,10 +14,18 @@ export default function NavigationSidebar() {
       <ul className="releases">
         {navData.map(release => (
           <>
-            <li key={release.slug}>{release.name}</li>
+            <li key={release.slug}>
+              <button onClick={() => setView({ type: 'release', slug: release.slug })}>
+                {release.name}
+              </button>
+            </li>
             <ul className="zones">
               {release.zones.map(zone => (
-                <li key={zone.slug}>{zone.name}</li>
+                <li key={zone.slug}>
+                  <button onClick={() => setView({ type: 'zone', slug: zone.slug })}>
+                    {zone.name}
+                  </button>
+                </li>
               ))}
             </ul>
           </>
