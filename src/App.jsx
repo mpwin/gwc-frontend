@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavigationSidebar } from './components/NavigationSidebar.jsx';
+import { Zone } from './components/Zone.jsx';
 import './App.css';
 
 function App() {
@@ -10,8 +11,8 @@ function App() {
       <NavigationSidebar setView={setView} />
       <main className="main-content">
         <h1>Guild Wars Catalog</h1>
-        <div>{view.type}</div>
-        <div>{view.slug}</div>
+        {view.type === 'release' && <div>{view.slug}</div>}
+        {view.type === 'zone' && <Zone slug={view.slug} />}
       </main>
     </>
   );
