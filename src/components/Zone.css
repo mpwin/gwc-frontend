@@ -1,0 +1,17 @@
+.zone {
+  .collections {
+    display: flex;
+
+    .achievement_collections {
+      flex: 1;
+    }
+
+    .skin_collections {
+      flex: 1;
+    }
+
+    .misc_collections {
+      flex: 1;
+    }
+  }
+}
