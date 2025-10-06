@@ -24,14 +24,7 @@ export function Zone({ slug }) {
 
         <div className="skin_collections">
           {data.skin_collections?.map(collection => (
-            <>
-              <div>{collection.name}</div>
-              <ul>
-                {collection.skins.map(skin => (
-                  <li>{skin.name}</li>
-                ))}
-              </ul>
-            </>
+            <Collection collection={collection} />
           ))}
         </div>
 

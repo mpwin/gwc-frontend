@@ -1,7 +1,7 @@
-export function Achievement({ achievement }) {
+export function Achievement({ item }) {
   return (
     <li className="achievement">
-      <div className="achievement-name">{achievement.name}</div>
+      <div className="achievement-name">{item.name}</div>
     </li>
   );
 }
