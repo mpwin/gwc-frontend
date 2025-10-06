@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Achievement } from './Achievement.jsx';
+import { Collection } from './Collection.jsx';
 import './Zone.css';
 
 export function Zone({ slug }) {
@@ -18,14 +18,7 @@ export function Zone({ slug }) {
       <div className="collections">
         <div className="achievement_collections">
           {data.achievement_collections?.map(collection => (
-            <>
-              <div>{collection.name}</div>
-              <ul>
-                {collection.achievements.map(achievement => (
-                  <Achievement achievement={achievement} />
-                ))}
-              </ul>
-            </>
+            <Collection collection={collection} />
           ))}
         </div>
 
