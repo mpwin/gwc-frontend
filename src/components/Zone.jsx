@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Achievement } from './Achievement.jsx';
 import './Zone.css';
 
 export function Zone({ slug }) {
@@ -21,7 +22,7 @@ export function Zone({ slug }) {
               <div>{collection.name}</div>
               <ul>
                 {collection.achievements.map(achievement => (
-                  <li>{achievement.name}</li>
+                  <Achievement achievement={achievement} />
                 ))}
               </ul>
             </>
