@@ -17,9 +17,9 @@ export function NavigationSidebar() {
         {navData.map(release => (
           <>
             <li key={release.slug}>
-              <a>
+              <Link to={`/${release.slug}`}>
                 {release.name}
-              </a>
+              </Link>
             </li>
             <ul className="zones">
               {release.zones.map(zone => (
