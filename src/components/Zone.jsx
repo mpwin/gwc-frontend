@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { Collection } from './Collection.jsx';
 import './Zone.css';
 
-export function Zone({ slug }) {
+export function Zone() {
+  const { zoneSlug } = useParams();
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch(`/api/zones/${slug}`)
+    fetch(`/api/zones/${zoneSlug}`)
       .then(response => response.json())
       .then(data => setData(data));
-  }, [slug]);
+  }, [zoneSlug]);
 
   return (
     <div className="zone">

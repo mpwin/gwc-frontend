@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './NavigationSidebar.css';
 
-export function NavigationSidebar({ setView }) {
+export function NavigationSidebar() {
   const [navData, setNavData] = useState([]);
 
   useEffect(() => {
@@ -16,16 +17,16 @@ export function NavigationSidebar({ setView }) {
         {navData.map(release => (
           <>
             <li key={release.slug}>
-              <button onClick={() => setView({ type: 'release', slug: release.slug })}>
+              <a>
                 {release.name}
-              </button>
+              </a>
             </li>
             <ul className="zones">
               {release.zones.map(zone => (
                 <li key={zone.slug}>
-                  <button onClick={() => setView({ type: 'zone', slug: zone.slug })}>
+                  <Link to={`/${release.slug}/${zone.slug}`}>
                     {zone.name}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
