@@ -1,9 +1,9 @@
 header {
-  border: 2px solid #6272A4;
+  border: 2px solid var(--comment);
   margin: 10px;
   padding: 10px 20px;
 
   .home-link {
-    color: #F8F8F2;
+    color: var(--foreground);
   }
 }
