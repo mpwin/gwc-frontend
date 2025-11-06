@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.navigation-sidebar {
+  align-self: flex-start;
+}
+
 .main-content {
   flex: 1;
   padding: 40px;

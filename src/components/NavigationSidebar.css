@@ -1,6 +1,7 @@
 .navigation-sidebar {
-  border-right: 1px solid #a89984;
-  padding: 40px 60px 40px 40px;
+  border: 2px solid var(--comment);
+  margin: 10px;
+  padding: 10px 80px 10px 20px;
 
   ul {
     list-style: none;
@@ -8,11 +9,26 @@
     padding: 0;
   }
 
-  ul.zones {
-    padding-left: 40px;
+  li.release {
+    a {
+      color: var(--cyan);
+    }
   }
 
-  li {
-    padding: 4px 0px;
+  li.zone {
+    margin-top: 5px;
+
+    &::before {
+      content: "├ ";
+      color: var(--comment);
+    }
+
+    &:last-child::before {
+      content: "└ ";
+    }
+
+    a {
+      color: var(--purple);
+    }
   }
 }
