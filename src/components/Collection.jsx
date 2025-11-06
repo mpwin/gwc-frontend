@@ -1,5 +1,6 @@
 import { Achievement } from './Achievement.jsx';
 import { Skin } from './Skin.jsx';
+import './Collection.css';
 
 const ITEM_COMPONENTS = {
   achievement: Achievement,

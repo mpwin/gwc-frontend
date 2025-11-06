@@ -7,6 +7,14 @@
 }
 
 .main-content {
+  border: 2px solid var(--comment);
   flex: 1;
-  padding: 40px;
+  margin: 10px;
+  padding: 10px 20px;
+
+  h1 {
+    color: var(--orange);
+    font: inherit;
+    margin: 0 0 20px 0;
+  }
 }

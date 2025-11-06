@@ -14,7 +14,7 @@ export function Release() {
 
   return (
     <div className="release">
-      <h2>{data.name}</h2>
+      <h1>{data.name}</h1>
 
       <div className="collections">
         <div className="achievement_collections">

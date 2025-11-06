@@ -1,0 +1,27 @@
+.collection {
+  .collection-name {
+    border: 1px solid rgb(from var(--comment) r g b / 0.4);
+    border-bottom: none;
+    color: var(--purple);
+    padding: 4px 12px;
+  }
+
+  ul {
+    border: 1px solid rgb(from var(--comment) r g b / 0.4);
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    border-bottom: 1px solid rgb(from var(--comment) r g b / 0.4);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      margin: 4px 12px;
+    }
+  }
+}

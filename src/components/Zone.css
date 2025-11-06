@@ -1,6 +1,7 @@
 .zone {
   .collections {
     display: flex;
+    gap: 80px;
 
     .achievement_collections {
       flex: 1;
