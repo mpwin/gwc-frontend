@@ -13,26 +13,18 @@ export function NavigationSidebar() {
 
   return (
     <nav className="navigation-sidebar">
-      <ul className="releases">
-        {navData.map(release => (
-          <>
-            <li key={release.slug}>
-              <Link to={`/${release.slug}`}>
-                {release.name}
-              </Link>
+      {navData.map(release => (
+        <ul>
+          <li key={release.slug} className="release">
+            <Link to={`/${release.slug}`}>{release.name}</Link>
+          </li>
+          {release.zones.map(zone => (
+            <li key={zone.slug} className="zone">
+              <Link to={`/${release.slug}/${zone.slug}`}>{zone.name}</Link>
             </li>
-            <ul className="zones">
-              {release.zones.map(zone => (
-                <li key={zone.slug}>
-                  <Link to={`/${release.slug}/${zone.slug}`}>
-                    {zone.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </>
-        ))}
-      </ul>
+          ))}
+        </ul>
+      ))}
     </nav>
   );
 }
