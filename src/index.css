@@ -1,17 +1,17 @@
 :root {
   /* Dracula theme colors */
-  --background: #282A36;
-  --foreground: #F8F8F2;
-  --current-line: #6272A4;
-  --selection: #44475A;
-  --comment: #6272A4;
-  --cyan: #8BE9FD;
-  --green: #50FA7B;
-  --orange: #FFB86C;
-  --pink: #FF79C6;
-  --purple: #BD93F9;
-  --red: #FF5555;
-  --yellow: #F1FA8C;
+  --background: rgb(40, 42, 54);
+  --foreground: rgb(248, 248, 242);
+  --current-line: rgb(98, 114, 164);
+  --selection: rgb(68, 71, 90);
+  --comment: rgb(98, 114, 164);
+  --cyan: rgb(139, 233, 253);
+  --green: rgb(80, 250, 123);
+  --orange: rgb(255, 184, 108);
+  --pink: rgb(255, 121, 198);
+  --purple: rgb(189, 147, 249);
+  --red: rgb(255, 85, 85);
+  --yellow: rgb(241, 250, 140);
 
   background-color: var(--background);
   color: var(--foreground);
