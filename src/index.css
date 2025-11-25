@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/src/assets/fonts/JetBrainsMono-Regular.woff2');
+  font-weight: 400;
+}
+
 :root {
   /* Dracula theme colors */
   --background: rgb(40, 42, 54);
@@ -15,8 +21,8 @@
 
   background-color: var(--background);
   color: var(--foreground);
-  font-family: Consolas;
-  font-size: 24px;
+  font-family: 'JetBrains Mono', Consolas;
+  font-size: 20px;
   font-synthesis: none;
 }
 
