@@ -1,20 +1,24 @@
 .collection {
+  --border: 2px solid rgb(var(--background-rgb));
+
+  background: rgba(var(--selection-rgb), 0.4);
+
   .collection-name {
-    border: 1px solid rgba(var(--comment-rgb), 0.4);
+    border: var(--border);
     border-bottom: none;
     color: rgb(var(--purple-rgb));
     padding: 4px 12px;
   }
 
   ul {
-    border: 1px solid rgba(var(--comment-rgb), 0.4);
+    border: var(--border);
     list-style-type: none;
     margin: 0;
     padding-left: 0;
   }
 
   li {
-    border-bottom: 1px solid rgba(var(--comment-rgb), 0.4);
+    border-bottom: var(--border);
 
     &:last-child {
       border-bottom: none;
