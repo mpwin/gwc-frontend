@@ -7,13 +7,13 @@
 }
 
 .main-content {
-  border: 2px solid var(--comment);
+  border: 2px solid rgb(var(--comment-rgb));
   flex: 1;
   margin: 10px;
   padding: 10px 20px;
 
   h1 {
-    color: var(--orange);
+    color: rgb(var(--orange-rgb));
     font: inherit;
     margin: 0 0 20px 0;
   }

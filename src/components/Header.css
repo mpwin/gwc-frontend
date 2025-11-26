@@ -1,9 +1,9 @@
 header {
-  border: 2px solid var(--comment);
+  border: 2px solid rgb(var(--comment-rgb));
   margin: 10px;
   padding: 10px 20px;
 
   .home-link {
-    color: var(--orange);
+    color: rgb(var(--orange-rgb));
   }
 }

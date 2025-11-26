@@ -6,21 +6,21 @@
 
 :root {
   /* Dracula theme colors */
-  --background: rgb(40, 42, 54);
-  --foreground: rgb(248, 248, 242);
-  --current-line: rgb(98, 114, 164);
-  --selection: rgb(68, 71, 90);
-  --comment: rgb(98, 114, 164);
-  --cyan: rgb(139, 233, 253);
-  --green: rgb(80, 250, 123);
-  --orange: rgb(255, 184, 108);
-  --pink: rgb(255, 121, 198);
-  --purple: rgb(189, 147, 249);
-  --red: rgb(255, 85, 85);
-  --yellow: rgb(241, 250, 140);
+  --background-rgb: 40, 42, 54;
+  --foreground-rgb: 248, 248, 242;
+  --current-line-rgb: 98, 114, 164;
+  --selection-rgb: 68, 71, 90;
+  --comment-rgb: 98, 114, 164;
+  --cyan-rgb: 139, 233, 253;
+  --green-rgb: 80, 250, 123;
+  --orange-rgb: 255, 184, 108;
+  --pink-rgb: 255, 121, 198;
+  --purple-rgb: 189, 147, 249;
+  --red-rgb: 255, 85, 85;
+  --yellow-rgb: 241, 250, 140;
 
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
   font-family: 'JetBrains Mono', Consolas;
   font-size: 20px;
   font-synthesis: none;
